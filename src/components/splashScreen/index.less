@@ -1,0 +1,99 @@
+.splash-screen {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: #fff;
+    // background: #fff url('./images/splash.jpg') no-repeat center;
+    background-size: contain;
+    z-index: 1000;
+
+    .skip {
+        padding: 10px 20px;
+        border: 1px solid #eee;
+        position: absolute;
+        bottom: 100px;
+        right: 30px;
+    }
+    .circle-wrap {
+        position: absolute;
+        top:50px;
+        right:100px;
+        .layout {
+             width: 24px;
+             height: 70px;
+             overflow: hidden;
+
+            .right-circle {
+
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                border-radius: 50%;
+                border: 2px solid transparent;
+                border-top: 2px solid red;
+                border-right: 2px solid red;
+                transform: rotate(-135deg);
+                animation: right_circle 5s linear forwards;
+            }
+
+            .left-circle {
+
+                width: 50px;
+                height: 50px;
+                top: 0px;
+                position: absolute;
+                border: 2px solid transparent;
+                border-left: 2px solid red;
+                border-bottom: 2px solid red;
+                border-radius: 50%;
+                animation: left_circle 5s linear forwards;
+            }
+        }
+
+        .left {
+            position: absolute;
+            left: 0px;
+        }
+        .right {
+            position: absolute;
+            left: 24px;
+        }
+
+        .count-down{
+
+            position: absolute;
+            top:21px;
+            left:24px;
+            transform: translate(-50%, -50%);
+            color:red;
+        }
+    }
+    
+
+    @keyframes right_circle {
+
+        0% {
+            transform: rotate(-135deg);
+        }
+        50%,
+        100% {
+            transform: rotate(45deg);
+        }
+    }
+
+    @keyframes left_circle {
+
+        0%,
+        50% {
+            transform: rotate(-135deg);
+        }
+
+        100% {
+            transform: rotate(45deg);
+        }
+    }
+}

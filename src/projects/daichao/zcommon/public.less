@@ -1,0 +1,57 @@
+@import './css/color.less';
+//全局底部的tabBar
+.global-tab-bar-wrap {
+
+    .global-tab-bar {
+        background: #FFFFFF;
+        .hui-home {
+            color: #CCCCCC;
+            .icon {
+                background: url('./images/hui_home.png') no-repeat center;
+                background-size: contain;
+            }
+        }
+
+        .hui-home.selected {
+
+            color: @public-color;
+
+            .icon {
+
+                background: url('./images/hui_home_two.png') no-repeat center;
+                background-size: contain;
+            }
+        }
+        .hui-ding {
+            color: #CCCCCC;
+            .icon {
+                background: url('./images/hui_ding.png') no-repeat center;
+                background-size: contain;
+            }
+        }
+
+        .hui-ding.selected {
+            color: @public-color;
+            .icon {
+                background: url('./images/hui_ding_two.png') no-repeat center;
+                background-size: contain;
+            }
+        }
+
+        .hui-ge {
+            color: #CCCCCC;
+            .icon {
+                background: url('./images/hui_ge.png') no-repeat center;
+                background-size: contain;
+            }
+        }
+
+        .hui-ge.selected {
+            color: @public-color;
+            .icon {
+                background: url('./images/hui_ge_two.png') no-repeat center;
+                background-size: contain;
+            }
+        }
+    }
+}

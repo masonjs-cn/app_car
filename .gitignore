@@ -1,0 +1,14 @@
+.DS_Store
+npm-debug.log
+.idea/
+
+weekly
+express/
+src/server/error
+src/server/blog
+node_modules/
+www/pages/
+www/static/
+www/images/
+platforms/
+android.js

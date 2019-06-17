@@ -1,0 +1,107 @@
+@import '../zcommon/css/color.less';
+.product-list {
+
+    .tab {
+        height: 80px;
+        border-top: 2px solid #F0F0F0;
+        background: #fff;
+        ul {
+            height: 80px;
+
+            li {
+                color: #4A4A4A;
+                font-size: 28px;
+                font-family: PingFangSC-Regular;
+            }
+
+            li.selected {
+
+                color: @public-color;
+                font-size: 28px;
+            }
+        }
+    }
+
+    .list {
+        li {
+            background: #fff;
+            border-top: 2px solid #F0F0F0;
+            padding-left: 32px;
+            margin-top: 20px;
+            .top {
+                border-bottom: 1px solid #F0F0F0;
+                padding-top: 18px;
+                padding-bottom: 14px;
+                img {
+                    width: 64px;
+                    height: 64px;
+                    margin-right: 24px;
+                }
+                .name {
+                    font-family: PingFangSC-Regular;
+                    font-size: 32px;
+                    color: #333;
+                    margin-left: 24px;
+                }
+                .tag {
+                    border: 1px solid #FF5555;
+                    display: block;
+                    padding: 2px 8px;
+                    margin-left: 18px;
+                    font-size: 20px;
+                    color: #FF5555;
+                }
+                p {
+                    color: #FF9610;
+                    font-size: 24px;
+                    font-family: PingFangSC-Regular;
+                    margin-left: 34px;
+                    span {
+                        color: #99AABB;
+                    }
+                }
+            }
+
+            .bottom {
+                padding-top: 37px;
+                padding-bottom: 50px;
+
+                .left,
+                .right {
+                    p:nth-of-type(1) {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .left {
+                    p:nth-of-type(1) {
+                        color: #FF8E00;
+                        font-size: 36px;
+                        font-family: PingFangSC-Regular;
+                    }
+                    p:nth-of-type(2) {
+
+                        color: #A5B5C3;
+                        font-size: 22px;
+                    }
+                }
+
+                .right {
+
+                    p:nth-of-type(1) {
+
+                        color: #3E4E5E;
+                        font-size: 28px;
+                        font-family: PingFangSC-Regular;
+                        margin-top: 5px;
+                    }
+                    p:nth-of-type(2) {
+                        color: #A1B1C1;
+                        font-size: 22px;
+                        font-family: PingFangSC-Regular;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,179 @@
+@import '../zcommon/css/color.less';
+.product-details{
+    background: rgb(255, 255, 255);
+    .user-info{
+    
+        height:312px;
+        background: url('./images/Group.png') no-repeat center;
+        background-size: cover;
+
+        .personal-data{
+            float: left;
+            margin-top: 120px;
+            width: 100%; 
+            padding: 3%;
+            .head-portrait{
+                width:130px;
+                height:130px;
+                border-radius:20%;
+                float: left;
+            }
+            .information{
+                margin-left: 5%;
+                width: 75%;
+                float: left;
+                height:130px;
+                .title{
+                    height: 65px;
+                     .real-name{
+                        height:50px;
+                        font-size:35px;
+                        color:rgba(255,255,255,1);
+                        line-height:65px;
+                    }
+                }
+
+            }
+
+        }
+    }
+    
+    
+
+    .interest{
+        display: flex;
+        justify-content: space-around;
+
+        .reference{
+            text-align: center;
+            padding-bottom:3px;
+            .percentage{
+                font-size:35px;
+                font-weight: 400;
+                color:rgba(0,0,0,1);
+                line-height:80px;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                text-align: center
+            }
+
+            .rate{
+                font-size:30px;
+                font-weight: 300;
+                color:rgba(83,83,84,1);
+                line-height:50px;
+            }
+
+        }
+
+        .blackLine{
+            margin-top: 20px;
+            float: left;
+            width:1px;
+            height:60px;
+            border:1px solid rgba(240,240,240,1);
+        }
+    }
+
+    .gray{
+        float: left;
+        background: #F8F8F8;
+        height: 15px;
+        width: 100%;
+    }
+
+    .list{
+        padding-top: 20px;
+        li{
+            padding-left:24px;
+            padding-right: 24px;
+            background: #fff;
+            margin-top: 20px;
+
+            .left{
+                .icon{
+                    float: left;
+                    width:34px;
+                    height:36px;
+                    display: block;
+                    background: url('./images/My.png') no-repeat center;
+                    background-size: contain;
+                    margin-right: 22px;
+                    margin-bottom: 55px;
+                }
+
+                .instructions{
+                    .title{
+                        font-size: 28px;
+                        color:#000000;
+                        font-family: PingFangSC-Regular;
+                    }
+                    .explain{
+                        font-size:26px;
+                        font-family:PingFangSC-Regular;
+                        color:rgba(133,133,133,1);
+                        border-bottom: 1px solid #F8F8F8;
+                        padding-bottom: 30px;
+                        // height: 50px;
+                        // line-height: 50px;
+
+                    }
+                    .explain_two{
+                        font-size:26px;
+                        font-family:PingFangSC-Regular;
+                        color:rgba(133,133,133,1);
+                        // height: 50px;
+                        // line-height: 50px;
+                    }
+
+                    .explain_tree{
+                        font-size:26px;
+                        font-family:PingFangSC-Regular;
+                        color:rgba(133,133,133,1);
+                        border-bottom: 1px solid #F8F8F8;
+                        padding-bottom: 30px;
+                        // height: 50px;
+                        // line-height: 50px;
+                    }
+
+                }
+            }
+
+        }
+
+        li:nth-of-type(2){
+            .left{
+                .icon{
+
+                    background: url('./images/InformationMarket.png') no-repeat center;
+                    background-size: contain;
+                }
+            }
+        }
+
+        li:nth-of-type(3){
+
+            .left{
+                .icon{
+
+                    background: url('./images/instructions.png') no-repeat center;
+                    background-size: contain;
+                }
+            }
+        }
+
+
+        li:nth-last-of-type(1){
+            border-bottom: 0px;
+        }
+
+        
+
+    }
+
+    .btn1{
+        background:@public-color
+    }
+}

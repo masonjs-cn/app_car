@@ -1,0 +1,95 @@
+.app-register {
+    background: #2c2c2c;
+    .banner {
+        height: 750px;
+        background: url('./images/newbg1.jpg') no-repeat center;
+        background-size: cover;
+    }
+    .action {
+        height: 800px;
+        background: url('./images/bg2.jpg') no-repeat center;
+        background-size: cover;
+        position: relative;
+        padding-top: 80px;
+        .global-register-action {
+            height: 500px;
+        }
+        .company {
+            text-align: center;
+        }
+        .logo {
+            height: 98px; // background:rgba(255,236,220,1);
+            opacity: 0.7;
+            width: 698px;
+            left: 26px;
+            bottom: 30px;
+            font-family: STHeiti;
+            font-size: 28px;
+            .icon {
+                width: 62px;
+                height: 62px;
+                background: url('./images/icon.png') no-repeat center;
+                background-size: contain;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.global-register-action.activity .register-btn {
+    background: #B2A060;
+}
+
+.global-register-action .phone,
+.global-register-action.default .phone,
+.global-register-action .code-wrap,
+.global-register-action.default .code-wrap,
+.global-register-action .img-wrap,
+.global-register-action.default .img-wrap {
+    background: none;
+    border: 1px solid #E5E5E5;
+}
+
+input {
+    background: none;
+    color: #FFFFFF;
+}
+
+.global-register-action .code-wrap .right .custom-code,
+.global-register-action.default .code-wrap .right .custom-code {
+    height: 74px;
+    line-height: 74px;
+    margin-right: 10px;
+    background: rgba(178, 160, 96, 1);
+    opacity: 0.8;
+    color: #fff;
+    border-radius: 8px; // color: #FC6565;
+    border-left: 0px;
+}
+
+//chrome谷歌浏览器，Safari苹果浏览器
+input[name="color"]::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+//firefox火狐浏览器
+input[name="color"]:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+input[name="color"]::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+//IE浏览器
+input[name="color"]:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: red;
+    font-size: 15px;
+}
